@@ -1,19 +1,29 @@
-.solution {
-  & .container {
-    display: flex;
-    padding: 0;
-  }
+// .solution {
+//   & .container {
+//     display: flex;
+//     padding: 0;
+//   }
 
-  &-content-wrapper {
-    background-color: var(--logo-color);
-    padding: 84px 44px 84px 30px;
-  }
+//   &-content-wrapper {
+//     background-color: var(--logo-color);
+//     padding: 84px 44px 84px 30px;
+//   }
 
-  &-btn {
-    @extend .button;
+//   &-btn {
+//     @extend .button;
 
-    width: 167px;
-    border: 1px solid var(--secondary-color-text);
-    background-color: transparent;
-  }
+//     width: 167px;
+//     border: 1px solid var(--secondary-color-text);
+//     background-color: transparent;
+//   }
+// }
+.future_games-tittle{
+  text-align: center;
+  
+}
+
+.future_games-list {
+  justify-content: center;
+  display:flex;
+  gap: 70px;
 }
