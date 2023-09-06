@@ -18,19 +18,26 @@
 .about-list {
   display: flex;
   justify-content: space-between;
-  text-align: center;
+  // text-align: center;
 }
 
 .about-item {
   width: 362px;
 }
 
-.about-subtitle {
-  margin-bottom: 16px;
-
-  font-size: 20px;
+.previous_games-subtitle {
+  margin-bottom: 1px;
+  font-size: 50px;
   line-height: 1.65;
   font-weight: 400;
+  text-align: center;
+}
+
+.previous_team-name {
+  font-size: 30px;
+  line-height: 1.65;
+  font-weight: 600;
+  text-align: center;
 }
 
 .about-icon {
@@ -44,7 +51,28 @@
   width: 67px;
   height: 67px;
 
-  background-color: var(--logo-color);
+  // background-color: blue;
 
   border-radius: 50%;
+}
+
+
+
+.previous_games-button {
+  font-family: inherit;
+  border: transparent;
+  border-radius: 15px;
+  width: 150px;
+  height: 40px;
+  color: white;
+  background-color: #6897dd;;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+  margin-top: 5px;
+
+  &:hover {
+      scale: 1.05;
+      filter: drop-shadow(0 8px 10px #6897dd);
+}
 }

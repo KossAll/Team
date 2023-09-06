@@ -1,7 +1,7 @@
 
 table {
     width: 100%;
-    border-collapse: collapse;
+    // border-collapse: collapse;
     margin: 0;
 }
 
@@ -25,6 +25,6 @@ tbody tr:nth-child(even) {
 
   /* Дополнительный стиль для выделенной команды */
 .highlighted {
-    background-color: rgb(54, 54, 243); /* Здесь вы можете выбрать желаемый цвет выделения */
+    background-color: #6897dd; /* Здесь вы можете выбрать желаемый цвет выделения */
     font-weight: bold;
 }

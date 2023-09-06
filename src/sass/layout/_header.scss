@@ -1,7 +1,7 @@
 .header {
   position: fixed;
   width: 100%;
-  z-index: 10;
+  z-index: 5;
 
   &.header-scroll {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
@@ -29,7 +29,7 @@ margin-right: 30px;
 
   &-logo-decoration {
     margin-right: 5px;
-    color: var(--logo-color);
+    color:#6897dd;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
