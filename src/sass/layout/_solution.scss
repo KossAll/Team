@@ -50,7 +50,7 @@
   width: 150px;
   height: 40px;
   color: white;
-  background-color: #6897dd;;
+  background-color: #6897dd;
   cursor: pointer;
   margin: 0 auto;
   display: block;
@@ -60,4 +60,10 @@
       scale: 1.05;
       filter: drop-shadow(0 8px 10px #6897dd);
 }
+}
+
+.future_team-img {
+margin: auto;
+height: 90px;
+width: 200px;
 }
