@@ -19,6 +19,10 @@
     
     }
 
+.carousel-text {
+    margin-bottom: 50px;
+}
+
 .news {
     flex: 0 0 auto;
     padding: 10px;
@@ -88,15 +92,6 @@
     
     }
 
-.close-btn {
-    font-size: 18px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    margin-top: 10px;
-    }
-
-
 
 .carousel_news-tittle {
     font-size: 24px;
@@ -132,11 +127,11 @@
 .details-content {
     padding: 30px;
     // height: 50px;
-    }
+        }
 
 .close-btn {
-    position: absolute;
-    bottom: 0;
+    position: fixed;
+    bottom: 15px;
     font-family: inherit;
     border: transparent;
     border-radius: 15px;
@@ -144,17 +139,14 @@
     height: 40px;
     color: white;
     background-color: #6897dd;
+    border: none;
     cursor: pointer;
-    margin: 0 auto;
     display: block;
-    margin-top: 10px;
-    margin-bottom: 10px;
-
     &:hover {
         scale: 1.05;
         filter: drop-shadow(0 8px 10px #6897dd);
-        }
     }
+}
 
     .carousel-btn {
         cursor: pointer;

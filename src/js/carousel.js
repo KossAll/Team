@@ -39,6 +39,13 @@ document.addEventListener('DOMContentLoaded', function() {
         overlay.classList.add('overlay');
         document.body.appendChild(overlay);
 
+     
+
+        const detailsContent = document.createElement('div'); // Обертка для контента новости
+        detailsContent.classList.add('details-content');
+        detailsContent.innerHTML = content;
+        overlay.appendChild(detailsContent);
+
         const closeBtn = document.createElement('button');
         closeBtn.classList.add('close-btn');
         closeBtn.innerText = 'Закрыть';
@@ -46,11 +53,6 @@ document.addEventListener('DOMContentLoaded', function() {
             document.body.removeChild(overlay);
         });
         overlay.appendChild(closeBtn);
-
-        const detailsContent = document.createElement('div'); // Обертка для контента новости
-        detailsContent.classList.add('details-content');
-        detailsContent.innerHTML = content;
-        overlay.appendChild(detailsContent);
 
         const detailsBtn = overlay.querySelector('.details-btn');
         detailsBtn.style.visibility = 'hidden'; // Скрываем кнопку "Детали"
