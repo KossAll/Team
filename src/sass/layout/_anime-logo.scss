@@ -1,0 +1,33 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: black;
+  }
+  
+  .logo-animation {
+    width: 500px; /* Задайте размеры ваших логотипа */
+    height: 500px;
+    background-image: url('/src/images/Технологія-Агросвіт.jpg');
+    background-size: cover;
+  
+    transform: scale(0);
+    animation: scale-up 3s forwards;
+  }
+  
+  @keyframes scale-up {
+    to {
+        transform: scale(1);
+    }
+  }
+  
+  
+  
+  
+  
