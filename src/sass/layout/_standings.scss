@@ -1,15 +1,17 @@
-
 table {
     width: 100%;
     // border-collapse: collapse;
     margin: 0;
 }
 
+
 table, th, td {
     border: 1px solid rgb(60, 68, 112);
+
 }
 
-th, td {
+th,
+td {
     padding: 10px;
     text-align: center;
     
@@ -24,8 +26,9 @@ tbody tr:nth-child(even) {
   } */
 
 
-  /* Дополнительный стиль для выделенной команды */
+/* Дополнительный стиль для выделенной команды */
 .highlighted {
-    background-color: #6897dd; /* Здесь вы можете выбрать желаемый цвет выделения */
+    background-color: #6897dd;
+    /* Здесь вы можете выбрать желаемый цвет выделения */
     font-weight: bold;
 }
