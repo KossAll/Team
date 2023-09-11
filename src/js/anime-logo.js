@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
         logoContainer.style.display = 'none';
     }, 3000);
 
-    setTimeout(function() {
-        var body = document.querySelector('body');
-        body.style.backgroundColor = 'white'; // Устанавливаем основной цвет фона
-    }, 6000);
+    // setTimeout(function() {
+    //     var body = document.querySelector('body');
+    //     body.style.backgroundColor = 'white'; // Устанавливаем основной цвет фона
+    // }, 6000);
 });
