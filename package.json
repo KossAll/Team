@@ -21,7 +21,8 @@
     "jquery": "^3.7.1",
     "modern-normalize": "^1.1.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
-    "simplelightbox": "^2.14.2"
+    "simplelightbox": "^2.14.2",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@parcel/packager-raw-url": "^2.6.0",
