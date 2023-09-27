@@ -1,0 +1,50 @@
+.ball-container {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .ball-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .ball {
+    position: absolute;
+    bottom: 0;
+    left: -100px;
+    background-image: url('/src/images/Без имени-1.png');
+    background-size: cover;
+    width: 100px; /* Установите нужные размеры мяча */
+    height: 100px;
+    transform-origin: center bottom; /* Центр вращения установлен в нижней части мяча */
+  }
+  
+  @keyframes roll {
+    0% {
+        left: -100px;
+    }
+    100% {
+        left: calc(100% - 100px); /* Изменено для плавного завершения анимации */
+    }
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+  }
+  
