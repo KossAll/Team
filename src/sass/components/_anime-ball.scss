@@ -11,12 +11,12 @@
   }
   
   .ball {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: -100px;
     background-image: url('/src/images/Без имени-1.png');
     background-size: cover;
-    width: 100px; /* Установите нужные размеры мяча */
+    width: 100px; /*размеры мяча */
     height: 100px;
     transform-origin: center bottom; /* Центр вращения установлен в нижней части мяча */
   }
