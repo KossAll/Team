@@ -1,12 +1,7 @@
+
 .hero {
   margin: 0 auto;
-  max-width: 1360px;
-  background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.4)
-    ),
-    url(../images/IMG_1595.jpeg);
+  max-width: 1360px; 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -26,7 +21,7 @@
 
     font-weight: 300;
     font-size: 55px;
-    line-height: 1.2;
+    line-height: 1.1;
   }
 
   &-description {
@@ -37,10 +32,42 @@
     line-height: 1.68;
   }
 
-  &-button {
-    @extend .button;
+  animation: imageChange 15s infinite;
+ 
+  
+  
+}
 
-    width: 165px;
-    background-color: var(--green-background);
+
+@keyframes imageChange {
+  0%, 100% {
+    background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../images/IMG_1595.jpeg);
+    opacity: 1;
+    transform: scale(1);
+    animation: scaleAnimation 7s infinite alternate;
+  }
+  50% {
+    background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../images/IMG_1320.jpeg);
+    opacity: 1;
+    transform: scale(1.2);
+    animation: scaleAnimation 7s infinite alternate;
+    transition: opacity 1s;
   }
 }
+
+
+
+
+
+
+
