@@ -54,13 +54,14 @@
   }
 
   &-link {
-    text-align: center;
+
     font-size: 24px;
     display: block;
     padding-top: 20px;
     padding-bottom: 0px;
     color: #6897dd;
     text-decoration: none;
+    text-align: center;
 
     transition: color 250ms linear;
   }
