@@ -1,9 +1,6 @@
 <header class="header" id="header">
   <div class="container">
-
-
-
-    <nav class="header-navigation">
+    <nav class="header-navigation" id="sticky">
       <a
         class="header-logo link animate__animated animate__rubberBand"
         href="./index.html"
@@ -17,16 +14,15 @@
         /><span class="header-logo-decoration">Технологія-Агросвіт</span>
       </a>
 
-      <ul class="header-list list">
+      <ul  class="header-list list">
         <li class="header-item">
           <a class="header-link" href="#hero">Головна</a>
         </li>
         <li class="header-item">
           <a class="header-link" href="#previous">Попередні матчі</a>
-
         </li>
         <li class="header-item">
-           <a class="header-link" href="#upcoming">Майбутні ігри</a>
+          <a class="header-link" href="#upcoming">Майбутні ігри</a>
         </li>
         <li class="header-item">
           <a class="header-link" href="#team">Команда</a>
@@ -34,11 +30,27 @@
         <li class="header-item">
           <a class="header-link" href="#footer">Contact</a>
         </li>
-
-        <label class="switch">
-          <input type="checkbox" id="themeToggle">
+        <div class="switch">
+          <button id="toggle-theme-btn" class="toggle-theme-btn">
+            <svg width="28px" height="28px">
+              <use
+                class="moon visually-hidden"
+                id="toggle-theme-image-moon"
+                href="./partials/images/svg/symbol-defs.svg#moon"
+              ></use>
+              <use
+                class="sun"
+                id="toggle-theme-image-sun"
+                href="./partials/images/svg/symbol-defs.svg#sun"
+              ></use>
+            </svg>
+            <span class="visually-hidden">theme</span>
+          </button>
+        </div>
+        <!-- <label class="switch">
+          <input type="checkbox" id="themeToggle" />
           <span class="slider"></span>
-        </label>
+        </label> -->
       </ul>
     </nav>
   </div>

@@ -8,5 +8,5 @@ import './js/carousel';
 import './js/players';
 import './js/anime-ball';
 import './js/buttonUp';
-
+import './js/changeMode';
 

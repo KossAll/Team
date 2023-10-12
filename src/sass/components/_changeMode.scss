@@ -1,0 +1,54 @@
+.moon {
+    background-color: #1e1e1e;
+    color: var(--blue-background);
+}
+
+.moon .carousel_news-tittle {
+    color: var(--button-activ-color);
+
+};
+
+.switch {
+    position: relative;
+}
+
+.toggle-theme-btn {
+    position: absolute;
+    right: -30px;
+    top: 0px;
+    fill: var(--button-activ-color);
+    background-color: transparent;
+    border: none;
+    opacity: 100%;
+
+    &:hover,
+    &:focus {
+        color: var(--button-activ-color);
+        transform: scale(1.1);
+        animation: transition 0.2s ease-out;
+       
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 7%;
+            left: 0%;
+            display: block;
+            width: 0px;
+            height: 86%;
+            opacity: 0;
+            background: white;
+            box-shadow: 0 0 15px 3px white;
+            transform: skewX(-20deg);
+            animation: shine 0.5s 0s linear;
+           
+        }
+    }
+
+    // @media screen and (min-width: $tablet) {
+    //     top: 15px;
+    //     right: 0px;
+    // }
+}
+
+
