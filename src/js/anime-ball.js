@@ -5,12 +5,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function startAnimation() {
         const ball = document.querySelector('.ball');
-        ball.style.animation = 'roll 7s linear infinite, bounce 0.5s alternate infinite, rotate 2s linear infinite';
+        ball.style.animation = 'roll 7s linear infinite, rotate 2s linear infinite';
         setTimeout(function() {
-            ball.style.animation = 'none';
+            ball.style.animation = 'roll 7s linear infinite, rotate 2s linear infinite';
             setTimeout(startAnimation, 10000);
         }, 7000);
     }
 });
+
+
 
 

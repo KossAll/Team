@@ -48,7 +48,7 @@
     ),
     url(../images/IMG_1595.jpeg);
     opacity: 1;
-    transform: scale(1);
+    // transform: scale(1);
     animation: scaleAnimation 10s infinite alternate;
   }
   50% {
@@ -59,7 +59,7 @@
     ),
     url(../images/IMG_1320.jpeg);
     opacity: 1;
-    transform: scale(1.2);
+    // transform: scale(1.2);
     animation: scaleAnimation 10s infinite alternate;
     transition: opacity 2s;
   }
