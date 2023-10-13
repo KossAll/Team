@@ -67,10 +67,10 @@
 
 #pprevBtn::before, #pnextBtn::before {
   content: "";
-  background-image: url('/src/images/Без имени-1.png'); /* Замените путь на путь к вашему изображению футбольного мяча */
+  background-image: url('/src/images/Без имени-1.png');
   background-size: cover;
-  width: 84px; /* Размер изображения мяча */
-  height: 84px;
+  width: 50px; /* Размер изображения мяча */
+  height: 50px;
   display: block;
 }
 
