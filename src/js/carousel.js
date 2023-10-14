@@ -11,52 +11,63 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function prevSlide() {
-        if (currentIndex > 0) {
-            currentIndex--;
-        } else {
-            currentIndex = newsCarousel.children.length - 1;
-        }
+        currentIndex = (currentIndex - 3 + newsCarousel.children.length) % newsCarousel.children.length;
         showNews(currentIndex);
     }
-
+    
     function nextSlide() {
-        if (currentIndex < newsCarousel.children.length - 1) {
-            currentIndex++;
-        } else {
-            currentIndex = 0;
-        }
+        currentIndex = (currentIndex + 3) % newsCarousel.children.length;
         showNews(currentIndex);
     }
 
     prevBtn.addEventListener('click', prevSlide);
     nextBtn.addEventListener('click', nextSlide);
 
+    
     function showDetails(index) {
         const newsItems = document.querySelectorAll('.news');
-        const newsItem = newsItems[index];
-        const content = newsItem.innerHTML;
-        const overlay = document.createElement('div');
-        overlay.classList.add('overlay');
-        document.body.appendChild(overlay);
-
-     
-
-        const detailsContent = document.createElement('div'); // Обертка для контента новости
-        detailsContent.classList.add('details-content');
-        detailsContent.innerHTML = content;
-        overlay.appendChild(detailsContent);
-
-        const closeBtn = document.createElement('button');
-        closeBtn.classList.add('close-btn');
-        closeBtn.innerText = 'Закрыть';
-        closeBtn.addEventListener('click', () => {
-            document.body.removeChild(overlay);
-        });
-        overlay.appendChild(closeBtn);
-
-        const detailsBtn = overlay.querySelector('.details-btn');
-        detailsBtn.style.visibility = 'hidden'; // Скрываем кнопку "Детали"
+    
+        if (index >= 0 && index < newsItems.length) {
+            const newsItem = newsItems[index];
+    
+            if (newsItem) { // Проверяем, существует ли элемент
+                const content = newsItem.innerHTML;
+                const overlay = document.createElement('div');
+                overlay.classList.add('overlay');
+                document.body.appendChild(overlay);
+    
+                // const detailsContent = document.createElement('div');
+                // detailsContent.classList.add('details-content');
+                // detailsContent.innerHTML = content;
+                // overlay.appendChild(detailsContent);
+    
+                const closeBtn = document.createElement('button');
+                closeBtn.classList.add('close-btn');
+                closeBtn.innerText = 'Back';
+                closeBtn.addEventListener('click', () => {
+                    document.body.removeChild(overlay);
+                });
+                overlay.appendChild(closeBtn);
+    
+                // const detailsBtn = overlay.querySelector('.details-btn');
+                // detailsBtn.style.visibility = 'hidden';
+    
+                function closeOnEsc(event) {
+                    if (event.key === 'Escape') {
+                        document.body.removeChild(overlay);
+                        document.removeEventListener('keydown', closeOnEsc);
+                    }
+                }
+    
+                document.addEventListener('keydown', closeOnEsc);
+            } else {
+                console.error(`Элемент с индексом ${index} не найден.`);
+            }
+        } else {
+            console.error(`Элемент с индексом ${index} не найден.`);
+        }
     }
+    
 
-    window.showDetails = showDetails; // Добавляем функцию showDetails в глобальную область видимости
+    window.showDetails = showDetails;
 });

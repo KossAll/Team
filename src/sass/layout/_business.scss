@@ -24,9 +24,11 @@
   padding-bottom: 19px;
 }
 
-.carousel-content {
+.carousel_players-content {
   display: flex;
   transition: transform 0.3s ease;
+  gap: 25px;
+  justify-content: center
   
 }
 
