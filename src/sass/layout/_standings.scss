@@ -10,6 +10,10 @@ table, th, td {
 
 }
 
+table {
+    margin-bottom: 50px;
+}
+
 th,
 td {
     padding: 10px;
@@ -31,4 +35,13 @@ tbody tr:nth-child(even) {
     background-color: #6897dd;
     /* Здесь вы можете выбрать желаемый цвет выделения */
     font-weight: bold;
+}
+
+.team-name {
+    width: 500px;
+}
+
+.tournament-name {
+    text-align: center;
+    background-color: rgb(173, 170, 170);
 }
