@@ -36,10 +36,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 overlay.classList.add('overlay');
                 document.body.appendChild(overlay);
     
-                // const detailsContent = document.createElement('div');
-                // detailsContent.classList.add('details-content');
-                // detailsContent.innerHTML = content;
-                // overlay.appendChild(detailsContent);
+                const detailsContent = document.createElement('div');
+                detailsContent.classList.add('details-content');
+                detailsContent.innerHTML = content;
+                overlay.appendChild(detailsContent);
     
                 const closeBtn = document.createElement('button');
                 closeBtn.classList.add('close-btn');
