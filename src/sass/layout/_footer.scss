@@ -2,36 +2,8 @@
   padding-top: 20px;
   padding-bottom: 16px;
   background-color: var(--main-color-text);
+  border: 10px;
+  border-color: red($color: #de0d0d);
 
-  &-list {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-  }
-  &-social-item:not(:last-child) {
-    margin-right: 25px;
-  }
 
-  &-social-link {
-    display: flex;
-    width: 35px;
-    height: 35px;
-    color: var(--secondary-color-text);
-  }
-
-  &-social-link:hover,
-  &-social-link:focus {
-    color: var(--green-background);
-  }
-
-  &-social-icon {
-    fill: currentColor;
-  }
-
-  &-text {
-    font-size: 18px;
-    line-height: 1.56;
-    text-align: center;
-    color: var(--secondary-color-text);
-  }
 }

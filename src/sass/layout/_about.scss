@@ -3,10 +3,10 @@
   padding-bottom: 19px;
   }
 
-.section-about .container {
-  padding-left: 66px;
-  padding-right: 66px;
-}
+// .section-about .container {
+//   padding-left: 66px;
+//   padding-right: 66px;
+// }
 
 .previous_games {
   font-size: 35px;
@@ -17,6 +17,10 @@
 .about-list {
   display: flex;
   justify-content: space-between;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    width: 100%;
+    flex-direction: column;
+  }
   // text-align: center;
 }
 
