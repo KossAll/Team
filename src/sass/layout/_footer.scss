@@ -2,8 +2,32 @@
   padding-top: 20px;
   padding-bottom: 16px;
   background-color: var(--main-color-text);
-  border: 10px;
-  border-color: red($color: #de0d0d);
+ 
+}
 
 
+.footer-social-container__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 0.5s ease;;
+  &:hover,
+  &:focus {
+    background-color: #6897dd;
+    transition: background-color 0.5s ease;;
+  }
+}
+
+.footer-social-container__icon {
+  fill: white;
+  transition: fill 0.5s ease;
+  .footer-social-container__link:hover &,
+  .footer-social-container__link:focus & {
+    fill:rgb(89, 86, 86);
+    transition: fill 0.5s ease;
+  }
 }
